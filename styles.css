@@ -45,6 +45,8 @@ h6 {
 
 .header {
     background-color: #fff;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 2fr 1fr;
 }
 
 .sidebar {
@@ -73,6 +75,70 @@ h6 {
     margin: 45px 0;
     padding-left: 15px;
     font-weight: bold;
+}
+
+.searchBar,
+.greeting {
+    padding-right: 10px;
+}
+
+.notificationArea,
+.actionBtns {
+    padding-left: 10px;
+}
+
+.searchBar,
+.notificationArea,
+.greeting,
+.actionBtns {
+    display: flex;
+    align-items: center;
+}
+
+.searchField {
+    flex: 1;
+}
+
+.searchField input {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: #d1e6ff;
+    padding: 3px 10px;
+}
+
+.greetingText p,
+.notificationArea p {
+    margin: 0;
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.greetingText .userName {
+    font-size: 1.2rem;
+}
+
+.notificationArea {
+    gap: 30px;
+    justify-content: end;
+}
+
+.actionBtns {
+    gap: 10px;
+}
+
+.actionBtns button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 23px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    line-height: 1;
 }
 
 .mainContent {
