@@ -66,14 +66,14 @@ h6 {
 
 .sidebarHeading {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 }
 
 .sidebarLogo {
     width: 50px;
     height: 50px;
-    background-color: #d7d7d7;
+    filter: invert();
 }
 
 .sidebarHeading h2 {
@@ -84,6 +84,60 @@ h6 {
     margin: 45px 0;
     padding-left: 15px;
     font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar>ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar>ul li::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 13px;
+    filter: invert();
+}
+
+.sidebar>ul li.home::before {
+    background-image: url('images/home.svg');
+}
+
+.sidebar>ul li.profile::before {
+    background-image: url('images/card-account-details-outline.svg');
+}
+
+.sidebar>ul li.messages::before {
+    background-image: url('images/message.svg');
+}
+
+.sidebar>ul li.history::before {
+    background-image: url('images/clock-time-three.svg');
+}
+
+.sidebar>ul li.tasks::before {
+    background-image: url('images/text-box-multiple.svg');
+}
+
+.sidebar>ul li.communities::before {
+    background-image: url('images/account-group.svg');
+}
+
+.sidebar>ul li.settings::before {
+    background-image: url('images/cog.svg');
+}
+
+.sidebar>ul li.support::before {
+    background-image: url('images/help-box.svg');
+}
+
+.sidebar>ul li.privacy::before {
+    background-image: url('images/shield-check.svg');
 }
 
 .searchBar,
@@ -201,7 +255,7 @@ h6 {
 
 .projectCardFooter {
     display: flex;
-    gap: 5px;
+    gap: 15px;
     justify-content: right;
     margin-top: auto;
 }
@@ -229,4 +283,9 @@ h6 {
 
 .userIdentifier p {
     margin: 0;
+}
+
+.icon {
+    width: 24px;
+    height: auto;
 }
