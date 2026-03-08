@@ -25,8 +25,12 @@ body {
 
 body {
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 p,
@@ -218,6 +222,16 @@ h6 {
     display: grid;
     grid-template: repeat(2, 1fr) / 3fr 1fr;
     gap: 15px;
+    font-size: 1rem;
+}
+
+.mainContent h2 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.mainContent .projectCardContainer h3 {
+    font-size: 1.15rem;
 }
 
 .projects {
@@ -262,6 +276,11 @@ h6 {
     gap: 15px;
     justify-content: right;
     margin-top: auto;
+}
+
+.trending,
+.announcement {
+    font-size: 0.8rem;
 }
 
 .announcement {
