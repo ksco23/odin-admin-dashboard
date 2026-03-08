@@ -140,6 +140,10 @@ h6 {
     background-image: url('images/shield-check.svg');
 }
 
+.greeting {
+    gap: 10px;
+}
+
 .searchBar,
 .greeting {
     padding-right: 10px;
@@ -279,6 +283,18 @@ h6 {
 
 .announcement p:last-child {
     margin-bottom: 10px;
+}
+
+.trendingCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trendingUserCard {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .userIdentifier p {
